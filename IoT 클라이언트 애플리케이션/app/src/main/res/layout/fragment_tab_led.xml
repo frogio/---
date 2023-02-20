@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabLedFragment" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgLogo_led"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_light_24" />
+
+        <TextView
+            android:id="@+id/txtLogo_led"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="조명"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgBack1_led"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/background_rect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+    <TextView
+        android:id="@+id/txtEntire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="전체조명"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgBack1_led"
+        app:layout_constraintStart_toStartOf="@+id/imgBack1_led"
+        app:layout_constraintTop_toTopOf="@+id/imgBack1_led" />
+
+    <Switch
+        android:id="@+id/switchEntire_led"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:switchMinWidth="60dp"
+        app:layout_constraintEnd_toEndOf="@+id/imgBack1_led"
+        app:layout_constraintStart_toStartOf="@+id/imgBack1_led"
+        app:layout_constraintTop_toBottomOf="@+id/txtEntire" />
+
+    <ImageView
+        android:id="@+id/imgBack2_led"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/background_rect"
+        app:layout_constraintEnd_toStartOf="@+id/space1_led"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBack1_led" />
+
+    <Space
+        android:id="@+id/space1_led"
+        android:layout_width="32dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/imgBack1_led"
+        app:layout_constraintStart_toStartOf="@+id/imgBack1_led"
+        app:layout_constraintTop_toBottomOf="@+id/imgBack1_led" />
+
+    <TextView
+        android:id="@+id/txtLiving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="거실"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgBack2_led"
+        app:layout_constraintStart_toStartOf="@+id/imgBack2_led"
+        app:layout_constraintTop_toTopOf="@+id/imgBack2_led" />
+
+    <Switch
+        android:id="@+id/switchLiving_led"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:switchMinWidth="60dp"
+        app:layout_constraintEnd_toEndOf="@+id/imgBack2_led"
+        app:layout_constraintStart_toStartOf="@+id/imgBack2_led"
+        app:layout_constraintTop_toBottomOf="@+id/txtLiving" />
+
+    <ImageView
+        android:id="@+id/imgBack3_led"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/background_rect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/space1_led"
+        app:layout_constraintTop_toBottomOf="@+id/imgBack1_led" />
+
+    <TextView
+        android:id="@+id/txtBath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="화장실"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgBack3_led"
+        app:layout_constraintStart_toEndOf="@+id/space1_led"
+        app:layout_constraintTop_toTopOf="@+id/imgBack3_led" />
+
+    <Switch
+        android:id="@+id/switchBath_led"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:switchMinWidth="60dp"
+        app:layout_constraintEnd_toEndOf="@+id/imgBack3_led"
+        app:layout_constraintStart_toEndOf="@+id/space1_led"
+        app:layout_constraintTop_toBottomOf="@+id/txtBath" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBack2_led">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/imgBack4_led"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/background_rect"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtRoom1_led"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="방1"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/imgBack4_led"
+                app:layout_constraintStart_toStartOf="@+id/imgBack4_led"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Switch
+                android:id="@+id/switchRoom1_led"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:switchMinWidth="60dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imgBack4_led"
+                app:layout_constraintTop_toBottomOf="@+id/txtRoom1_led" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="0.5" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/imgBack5_led"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/background_rect"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtRoom2_led"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="방2"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/imgBack5_led"
+                app:layout_constraintStart_toStartOf="@+id/imgBack5_led"
+                app:layout_constraintTop_toTopOf="@+id/imgBack5_led" />
+
+            <Switch
+                android:id="@+id/switchRoom2_led"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:switchMinWidth="60dp"
+                app:layout_constraintEnd_toEndOf="@+id/imgBack5_led"
+                app:layout_constraintStart_toStartOf="@+id/imgBack5_led"
+                app:layout_constraintTop_toBottomOf="@+id/txtRoom2_led" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="0.5"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/imgBack6_led"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/background_rect"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtRoom3_led"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="방3"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Switch
+                android:id="@+id/switchRoom3_led"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:switchMinWidth="60dp"
+                app:layout_constraintEnd_toEndOf="@+id/imgBack6_led"
+                app:layout_constraintStart_toStartOf="@+id/imgBack6_led"
+                app:layout_constraintTop_toBottomOf="@+id/txtRoom3_led" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
